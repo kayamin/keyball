@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LSFT,_______,KC_LOPT,KC_TAB,LT(3,KC_SPACE),KC_MS_BTN1,     KC_BACKSPACE,LT(1,KC_ENT),_______,_______,_______,KC_LSFT
   ),
 
-  [1] = LAYOUT_universal(
+  [1] = LAYOUT_universal(   
     KC_GRAVE  ,KC_0,KC_1,KC_2,KC_3,                                     KC_CIRCUMFLEX, KC_AMPERSAND, KC_MINUS, KC_EQUAL, KC_ASTERISK,
     KC_AT ,KC_EXCLAIM	,SFT_T(KC_4) ,CMD_T(KC_5) ,KC_6  ,                _______, KC_PRNTHS_CURSOR_LEFT, _______, LSFT(KC_SEMICOLON), KC_SEMICOLON,
     KC_DOLLAR, KC_HASH	, KC_7  , KC_8  ,KC_9,                               KC_CBRACKET_CURSOR_LEFT, KC_SBRACKET_CURSOR_LEFT, _______ , KC_PERCENT, KC_BACKSLASH,

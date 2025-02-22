@@ -75,9 +75,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [3] = LAYOUT_universal(
-    _______  , _______ , LWIN(LCTL(KC_LEFT)), LWIN(LCTL(KC_RIGHT)), LWIN(KC_TAB),                                _______  , LCTL(KC_LEFT), KC_UP  , LCTL(KC_RIGHT)  , LCTL(KC_LEFT_BRACKET),
-    LALT(KC_A)  , _______  , _______, LALT(KC_E), _______  ,                                                         _______  , KC_LEFT  , KC_DOWN, KC_RIGHT, LCTL(KC_RIGHT_BRACKET),
-    _______  , LCTL(LALT(KC_DOT)), LCTL(LALT(KC_LEFT)), LCTL(LALT(KC_RIGHT)), LCTL(LALT(KC_ENT)),                  _______  , _______ , _______  , _______  , _______  ,
+    _______  , LWIN(KC_TAB) , LWIN(LCTL(KC_LEFT)), LWIN(LCTL(KC_RIGHT)), _______,                                _______  , _______, KC_UP  , _______   , LCTL(KC_LEFT_BRACKET),
+    LALT(KC_A)  , LALT(KC_E), _______, _______, _______  ,                                                         _______  , KC_LEFT  , KC_DOWN, KC_RIGHT, LCTL(KC_RIGHT_BRACKET),
+    _______  , LCTL(LALT(KC_DOT)), LCTL(LALT(KC_LEFT)), LCTL(LALT(KC_RIGHT)), LCTL(LALT(KC_ENT)),                  _______  ,  LCTL(KC_LEFT), _______  , LCTL(KC_RIGHT)  , _______  ,
     KC_LSFT, _______  , _______  , _______  , _______  , _______  ,                                                _______  , _______  , _______  , _______  , _______  , _______  
   ),
 
