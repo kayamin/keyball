@@ -31,7 +31,8 @@ enum custom_keycodes {
   KC_CBRACKET_CURSOR_LEFT,
   KC_SBRACKET_CURSOR_LEFT,
   KC_PRNTHS_CURSOR_LEFT,
-  KC_ABRACKET_CURSOR_LEFT,  
+  KC_ABRACKET_CURSOR_LEFT,
+  KC_VSC_SEARCH_FILE
 };
 
 // マクロキーの処理を行う関数
@@ -58,6 +59,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case KC_ABRACKET_CURSOR_LEFT: {
       if (record->event.pressed) {
         SEND_STRING("<>"SS_TAP(X_LEFT));
+      }
+      break;
+    }
+    case KC_VSC_SEARCH_FILE: {
+      if (record->event.pressed) {
+        SEND_STRING(SS_LCMD("c") SS_LCMD("p") SS_LCMD("v"));
       }
       break;
     }

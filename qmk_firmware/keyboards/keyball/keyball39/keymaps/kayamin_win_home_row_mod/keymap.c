@@ -55,16 +55,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // keymap for default
   [0] = LAYOUT_universal(
     KC_Q   , KC_W     , KC_E     , KC_R     , KC_T     ,                            KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     ,
-    WIN_T(KC_A), ALT_T(KC_S) , SFT_T(KC_D), CTL_T(KC_F)   , KC_G,                   WIN_T(KC_H)     , CTL_T(KC_J), SFT_T(KC_K) , ALT_T(KC_L)    , LT(3,KC_QUOTE)    ,
+    KC_A, ALT_T(KC_S) , SFT_T(KC_D), CTL_T(KC_F)   , WIN_T(KC_G),                   WIN_T(KC_H)     , CTL_T(KC_J), SFT_T(KC_K) , ALT_T(KC_L)    , LT(3,KC_QUOTE)    ,
     KC_Z     , KC_X     , KC_C     ,KC_V    , KC_B,                                 KC_N     , KC_M     , KC_COMMA , KC_DOT   , LT(2,KC_QUESTION) ,
-    KC_LSFT,_______, KC_LWIN ,KC_TAB,LT(3,KC_SPACE),KC_MS_BTN1,     KC_BACKSPACE,LT(1,KC_ENT),_______,_______,_______,KC_LSFT
+    KC_LSFT,KC_MINUS , KC_LWIN ,LT(4,KC_TAB) ,LT(3,KC_SPACE),KC_MS_BTN1,     KC_BACKSPACE,LT(1,KC_ENT),_______,_______,_______,KC_LSFT
   ),
 
-  [1] = LAYOUT_universal(
+  [1] = LAYOUT_universal(   
     KC_GRAVE  ,KC_0,KC_1,KC_2,KC_3,                                     KC_CIRCUMFLEX, KC_AMPERSAND, KC_MINUS, KC_EQUAL, KC_ASTERISK,
-    KC_AT ,KC_EXCLAIM	,SFT_T(KC_4) ,CTL_T(KC_5) ,KC_6  ,                _______, KC_PRNTHS_CURSOR_LEFT, _______, LSFT(KC_SEMICOLON), KC_SEMICOLON,
-    KC_DOLLAR, KC_HASH	, KC_7  , KC_8  ,KC_9,                               KC_CBRACKET_CURSOR_LEFT, KC_SBRACKET_CURSOR_LEFT, _______ , KC_PERCENT, KC_BACKSLASH,
-    _______, _______, _______ , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , _______  , _______
+    KC_AT ,KC_EXCLAIM	,SFT_T(KC_4) ,CTL_T(KC_5) ,KC_6  ,                LSFT(KC_9), LSFT(KC_0), LSFT(KC_LBRC), LSFT(KC_SEMICOLON), KC_SEMICOLON,
+    KC_DOLLAR, KC_HASH	, KC_7  , KC_8  ,KC_9,                          KC_LBRC, KC_RBRC, LSFT(KC_RBRC), KC_PERCENT, KC_BACKSLASH,
+    KC_LSFT, _______, _______ , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , _______  , KC_LSFT
   ),
   
   [2] = LAYOUT_universal(
@@ -75,14 +75,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [3] = LAYOUT_universal(
-    _______  , LWIN(KC_TAB) , LWIN(LCTL(KC_LEFT)), LWIN(LCTL(KC_RIGHT)), _______,                                _______  , _______, KC_UP  , _______   , LCTL(KC_LEFT_BRACKET),
-    LALT(KC_A)  , LALT(KC_E), _______, _______, _______  ,                                                         _______  , KC_LEFT  , KC_DOWN, KC_RIGHT, LCTL(KC_RIGHT_BRACKET),
-    _______  , LCTL(LALT(KC_DOT)), LCTL(LALT(KC_LEFT)), LCTL(LALT(KC_RIGHT)), LCTL(LALT(KC_ENT)),                  _______  ,  LCTL(KC_LEFT), _______  , LCTL(KC_RIGHT)  , _______  ,
+    _______  , LWIN(KC_TAB) , LWIN(LCTL(KC_LEFT)), LWIN(LCTL(KC_RIGHT)), _______,                                 _______  , _______, KC_UP  , _______   , LCTL(KC_LEFT_BRACKET),
+    LALT(KC_A)  , LALT(KC_E), _______, _______, _______  ,                                                         LALT(KC_LEFT)  , KC_LEFT  , KC_DOWN, KC_RIGHT, LCTL(KC_RIGHT_BRACKET),
+    _______  , LWIN(LSFT(KC_LEFT)), LWIN(KC_LEFT), LWIN(KC_RIGHT), LWIN(KC_UP),                  LALT(KC_RIGHT)  ,  LCTL(KC_LEFT), _______  , LCTL(KC_RIGHT)  , _______  ,
     KC_LSFT, _______  , _______  , _______  , _______  , _______  ,                                                _______  , _______  , _______  , _______  , _______  , _______  
   ),
 
   [4] = LAYOUT_universal(
-    _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  ,
+    _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , KC_VSC_SEARCH_FILE ,
     _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  , 
     _______  , _______  , _______  , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , _______  , _______  

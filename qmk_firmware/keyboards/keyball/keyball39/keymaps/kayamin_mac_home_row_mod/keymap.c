@@ -52,19 +52,19 @@
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  // keymap for default
+  // keymap for default 
   [0] = LAYOUT_universal(
     KC_Q   , KC_W     , KC_E     , KC_R     , KC_T     ,                            KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     ,
     OPT_T(KC_A)     , CTL_T(KC_S)     , SFT_T(KC_D), CMD_T(KC_F)   , KC_G,                 KC_H     , CMD_T(KC_J), SFT_T(KC_K) , CTL_T(KC_L)    , LT(3,KC_QUOTE)    ,
     KC_Z     , KC_X     , KC_C     ,KC_V    , KC_B,                                 KC_N     , KC_M     , KC_COMMA , KC_DOT   , LT(2,KC_QUESTION) ,
-    KC_LSFT,_______,KC_LOPT,KC_TAB,LT(3,KC_SPACE),KC_MS_BTN1,     KC_BACKSPACE,LT(1,KC_ENT),_______,_______,_______,KC_LSFT
+    KC_LNG2, KC_MINUS, KC_LOPT, LT(4,KC_TAB), LT(3,KC_SPACE), KC_MS_BTN1,     KC_BACKSPACE,LT(1,KC_ENT),_______,_______,_______,KC_LNG1
   ),
 
   [1] = LAYOUT_universal(   
     KC_GRAVE  ,KC_0,KC_1,KC_2,KC_3,                                     KC_CIRCUMFLEX, KC_AMPERSAND, KC_MINUS, KC_EQUAL, KC_ASTERISK,
-    KC_AT ,KC_EXCLAIM	,SFT_T(KC_4) ,CMD_T(KC_5) ,KC_6  ,                _______, KC_PRNTHS_CURSOR_LEFT, _______, LSFT(KC_SEMICOLON), KC_SEMICOLON,
-    KC_DOLLAR, KC_HASH	, KC_7  , KC_8  ,KC_9,                               KC_CBRACKET_CURSOR_LEFT, KC_SBRACKET_CURSOR_LEFT, _______ , KC_PERCENT, KC_BACKSLASH,
-    _______, _______, _______ , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , _______  , _______
+    KC_AT ,KC_EXCLAIM	,SFT_T(KC_4) ,CMD_T(KC_5) ,KC_6  ,                LSFT(KC_9), LSFT(KC_0), LSFT(KC_LBRC), LSFT(KC_SEMICOLON), KC_SEMICOLON,
+    KC_DOLLAR, KC_HASH	, KC_7  , KC_8  ,KC_9,                               KC_LBRC, KC_RBRC, LSFT(KC_RBRC), KC_PERCENT, KC_BACKSLASH,
+    KC_LSFT, _______, _______ , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , _______  , KC_LSFT
   ),
   
   [2] = LAYOUT_universal(
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [4] = LAYOUT_universal(
-    _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  ,
+    _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , KC_VSC_SEARCH_FILE  ,
     _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  , 
     _______  , _______  , _______  , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , _______  , _______  
@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______  , _______  , _______  , _______  , _______  ,                            _______  , SCRL_DVI , CPI_I100 , _______  , RGB_TOG  ,
     _______  , _______  , _______  , _______  , _______  ,                            SCRL_DVD , CPI_D100 , _______  , _______  , _______  ,
     _______  , _______  , _______  , _______  , _______  ,                            _______  , _______  , _______  , _______  , _______  ,
-    _______  , _______  , _______  , _______  , _______  , _______  ,      _______  , KBC_RST  , _______  , _______  , _______  , _______  
+    _______  , _______  , _______  , _______  , _______  , _______  ,      _______  , KBC_RST  , _______  , _______  , _______  , _______
   ),
 
   [6] = LAYOUT_universal(
